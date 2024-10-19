@@ -17,7 +17,7 @@ public class CustomerOperationsImpl implements CustomerOperations{
 	
 	public CustomerOperationsImpl() {
 		customers = new HashMap<>();
-		Customer c = new Customer("Prathamesh", "Chavan", "prathamesh@gmail.com", "123456", 10000,LocalDate.parse("2002-07-27"),ServicePlan.PLATINUM);
+		Customer c = new Customer("Shubham", "Nigave", "Shubham@gmail.com", "123456", 10000,LocalDate.parse("2000-07-27"),ServicePlan.PLATINUM);
 		customers.put(c.getEmail(),c);
 	}
 

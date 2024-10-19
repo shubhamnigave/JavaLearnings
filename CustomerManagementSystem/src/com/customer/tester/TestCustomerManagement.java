@@ -1,11 +1,9 @@
 package com.customer.tester;
-
 import java.util.Scanner;
 
 import javax.management.loading.PrivateClassLoader;
 
 import com.customer.operations.CustomerOperationsImpl;
-
 public class TestCustomerManagement {
 	public static void main(String[] args) {
 		try(Scanner sc = new Scanner(System.in)){			
