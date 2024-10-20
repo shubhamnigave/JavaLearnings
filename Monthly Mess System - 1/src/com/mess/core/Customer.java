@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class Customer {
 
-	private static int idCounter;
+	private static int idCounter=100;
 	private int custid;
 	private String firstname,lastname,email,password,Address,phone;
 	private LocalDate RegisterDate,planEndDate;
