@@ -93,23 +93,31 @@ Customer c6 = new Customer("Sarah", "Wilson", "sarah.wilson@example.com", "sarah
 		}
 	}
 	@Override
-	public void displayEmail(String next) {
+	public void displayEmail(String month) {
 		// TODO Auto-generated method stub
-		
+		Mess.values().stream()
+		.filter(c->c.getRegisterDate().getMonth().name().equals(month.toUpperCase()));
 	}
-
-	public void displayCount(String next) {
-		// TODO Auto-generated method stub
+	@Override
+	public void displayCount(String plan) {
+		long count = Mess.values().stream()
+				.filter(c->c.getPlan().name().equals(plan.toUpperCase()))
+				.count();
+				System.out.println(count);	
 		
 	}
 	@Override
-	public void searchSortByCIty(String next) {
-		// TODO Auto-generated method stub
+	public void searchSortByCIty(String city) {
+		Mess.values().stream()
+		.filter(c->c.getAddress().equals(city))
+		.forEach(c->System.out.println(c));
 		
 	}
 	@Override
-	public void addDiscount(String next, double nextDouble) {
-		// TODO Auto-generated method stub
+	public void addDiscount(String plan, double discount) {
+		Mess.values().stream()
+		.filter(c->c.getPlan().name().equals(plan.toUpperCase()))
+		.forEach(c->c.setFinal_amount(c.getFinal_amount()-c.getFinal_amount()*(discount/100)));
 		
 	}
 	
