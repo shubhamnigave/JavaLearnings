@@ -32,11 +32,13 @@ public interface MessOperation {
 	void sortByLastName();
 	void sortByRegistrationDate();
 	void modifyFirstname();
-	void unsubsrcibeCust(int month);
+	void unsubsrcibeCust(long month);
 	void displayEmail(String month);
 	void displayCount(String plan);
 	void searchSortByCIty(String city);
 	void addDiscount(String plan, double discount);
 
 }
+
+	
 
