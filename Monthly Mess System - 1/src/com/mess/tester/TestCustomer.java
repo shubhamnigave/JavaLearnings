@@ -34,6 +34,7 @@ public class TestCustomer {
 					break;
 				case 2:
 					System.out.println("Enter Your Email and Password");
+					ops.signIn(sc.next(),sc.next());
 					break;
 				case 3:
 					System.out.println("Enter your Email, Old Password, New Password");
